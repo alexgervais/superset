@@ -302,10 +302,8 @@ try:
         print('Loaded your LOCAL configuration at [{}]'.format(
              os.environ[CONFIG_PATH_ENV_VAR]))
         imp.load_source('superset_config', os.environ[CONFIG_PATH_ENV_VAR])
-    else:
-        from superset_config import *  # noqa
-        import superset_config
-        print('Loaded your LOCAL configuration at [{}]'.format(
-            superset_config.__file__))
+
+    from superset_config import *  # noqa
+    import superset_config
 except ImportError:
     pass
