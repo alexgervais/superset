@@ -53,6 +53,7 @@ setup(
         'flask-testing==0.6.1',
         'humanize==0.5.1',
         'gunicorn==19.6.0',
+        'gevent==1.2.1',
         'markdown==2.6.8',
         'pandas==0.18.1',
         'parsedatetime==2.0.0',

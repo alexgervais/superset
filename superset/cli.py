@@ -60,6 +60,7 @@ def runserver(debug, no_reload, address, port, timeout, workers):
         cmd = (
             "gunicorn "
             "-w {workers} "
+            "-k gevent "
             "--timeout {timeout} "
             "-b {address}:{port} "
             "--limit-request-line 0 "
